@@ -1,9 +1,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
-xsi:schemaLocation="http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans.xsd"
-id=""
-class=""
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
 
->
+	<bean id="1" class="Class.MyObject" name="Lettre1">
+		<property name="id" value="1"></property>
+		<property name="name" value="Vador"></property>
+	</bean>
+	
+	<bean id="2" class="Class.MyObject" name="Lettre2">
+		<property name="id" value="2"></property>
+		<property name="name" value="Luke"></property>
+		<property name="parent" ref="Lettre1"></property>
+	</bean>
+
 </beans>

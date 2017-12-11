@@ -5,16 +5,9 @@ import java.util.List;
 public class MyObject {
 	Integer id;
 	String name;
-	MyObject parents;
+	MyObject parent;
 	List<String> keywords;
-	
-	public MyObject(Integer id, String name, MyObject parents, List<String> keywords) {
-		this.id = id;
-		this.name = name;
-		this.parents = parents;
-		this.keywords = keywords;
-	}
-
+		
 	public Integer getId() {
 		return id;
 	}
@@ -31,12 +24,12 @@ public class MyObject {
 		this.name = name;
 	}
 
-	public MyObject getParents() {
-		return parents;
+	public MyObject getParent() {
+		return parent;
 	}
 
-	public void setParents(MyObject parents) {
-		this.parents = parents;
+	public void setParent(MyObject parents) {
+		this.parent = parents;
 	}
 
 	public List<String> getKeywords() {
